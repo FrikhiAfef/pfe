@@ -64,87 +64,59 @@
                     <hr class="qt-spacer-m">
                 </div>
                 <div class="col s12 m12 l8">
+
+
                     <!-- POST STICKY ITEM ========================= -->
-                    <div class="qt-part-archive-item qt-featured">
-                        <div class="qt-item-header">
-                            <div class="qt-header-top">
-                                <ul class="qt-tags">
-                                    <li><a href="#">Quotidienne</a></li>
-                                </ul>
-                                <!--<div class="qt-feedback">
-                                    <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
-                                </div>-->
-                            </div>
-                            <div class="qt-header-mid qt-vc">
-                                <div class="qt-vi">
-                                    <i class="dripicons-pin qt-icon-featured"></i>
-                                    <h3 class="qt-title">
-                                        <a href="#read" class="qt-text-shadow">
-                                            Scale-up
-                                        </a>
-                                    </h3>
+
+
+
+                    @foreach( $emissions as $emission)
+
+                        <div class="qt-part-archive-item qt-featured">
+                            <div class="qt-item-header">
+                                <div class="qt-header-top">
+                                    <ul class="qt-tags">
+                                        <li><a href="#">Quotidienne</a></li>
+                                    </ul>
+                                    <!--<div class="qt-feedback">
+                                        <a>17<i class="dripicons-message"></i></a><a>34<i class="dripicons-heart"></i></a>
+                                    </div>-->
                                 </div>
-                            </div>
-                            <div class="qt-header-bottom">
-                                <div class="qt-item-metas">
-                                    <a class="qt-author-thumb" href="#author-url">
-                                        <img src={{asset('utilisateur/imagestemplate/e1.jpg')}} alt="" width="30" height="30">
-                                    </a>
-                                    <div class="qt-texts">
-                                        <p class="qt-author"><a href="">Monia Jendoyubi</a></p>
-                                        <p class="qt-date">De Lundi à Vendredi de 12h00 à 14h00</p>
+                                <div class="qt-header-mid qt-vc">
+                                    <div class="qt-vi">
+                                        <i class="dripicons-pin qt-icon-featured"></i>
+                                        <h3 class="qt-title">
+                                            <a href="#read" class="qt-text-shadow">
+                                                {{$emission->nomE}}
+                                            </a>
+                                        </h3>
                                     </div>
                                 </div>
-                                <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
+                                <div class="qt-header-bottom">
+                                    <div class="qt-item-metas">
+                                        <a class="qt-author-thumb" href="#author-url">
+                                            <img src={{asset('utilisateur/imagestemplate/e1.jpg')}} alt="" width="30" height="30">
+                                        </a>
+                                        <div class="qt-texts">
+                                            <p class="qt-author"><a href=""> {{$emission->prenomAnim}} {{$emission->nomAnim}} </a></p>
+                                            <p class="qt-date"> {{$emission->date}}</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
+                                </div>
+                                <div class="qt-header-bg" data-bgimage='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}}'>
+                                    <img src='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}} alt="Featured image'width="690" height="302">
+                                </div>
                             </div>
-                            <div class="qt-header-bg" data-bgimage='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}}'>
-                                <img src='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}} alt="Featured image'width="690" height="302">
+                            <div class="qt-item-content qt-card qt-the-content">
+                                {{$emission->description}}
                             </div>
                         </div>
-                        <div class="qt-item-content qt-card qt-the-content">
-                            Un magazine hebdomadaire du12h00 à 14h00 plein d’exclusivités, de réactivité et d’explications présenté par Dorssaf Jebari. L’ambition de ce programme c’est de permettre les auditeurs d’analyser technologique nationale et internationale ( Big Data/ Digital Media Lab /Smart Grid /IoT /Cyber Securtity industrie creative).								</div>
-                    </div>
+                        @endforeach
+
                     <!-- POST STICKY ITEM END ========================= -->
                     <!-- POST ITEM ========================= -->
-                    <div class="qt-part-archive-item">
-                        <div class="qt-item-header">
-                            <div class="qt-header-top">
-                                <ul class="qt-tags">
-                                    <li><a href="#">Hebdomadaire</a></li>
-                                </ul>
 
-                            </div>
-                            <div class="qt-header-mid qt-vc">
-                                <div class="qt-vi">
-                                    <h3 class="qt-title">
-                                        <a href="#" class="qt-text-shadow">
-                                            Startup Stories
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="qt-header-bottom">
-                                <div class="qt-item-metas">
-                                    <a class="qt-author-thumb" href="#">
-                                        <img src='{{asset('utilisateur/imagestemplate/e2.jpg')}}' alt="" width="30" height="30">
-                                    </a>
-                                    <div class="qt-texts">
-                                        <p class="qt-author"><a href="#">Animateur : Walid Baccouche</a></p>
-                                        <p class="qt-date">Jeudi et Mardi De 12h00 à 13h<p>
-                                    </div>
-                                </div>
-                                <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
-                            </div>
-                            <div class="qt-header-bg" data-bgimage='{{asset('utilisateur/imagestemplate\emissions\img10.jpeg')}}'>
-                                <img src='{{asset('utilisateur/imagestemplate\emissions\img10.jpeg' )}}'alt="Featured image" width="690" height="302">
-                            </div>
-                        </div>
-                        <div class="qt-item-content qt-card qt-the-content">
-                            Au programme : des interviews avec une personne ou un groupe de personnes qui ont crée une srtartup
-                            Vos avis sur les différents sujets et débats nous intéressent, vous pouvez également poser vos questions aux invités en direct.
-
-                        </div>
-                    </div>
                     <!-- POST ITEM END ========================= -->
                     <hr class="qt-spacer-m">
                 </div>

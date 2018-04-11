@@ -56,98 +56,50 @@
                     <hr class="qt-spacer-m">
                 </div>
                 <div class="col s12 m12 l8">
+                @foreach($actualites as $actualite)
 
-                    <div class="qt-part-archive-item qt-featured">
-                        <div class="qt-item-header">
-                            <div class="qt-header-top">
-                                <ul class="qt-tags">
-                                    <li><a href="#">Actualités</a></li>
-                                </ul>
 
-                            </div>
-                            <div class="qt-header-mid qt-vc">
-                                <div class="qt-vi">
+                        <div class="qt-part-archive-item qt-featured">
+                            <div class="qt-item-header">
+                                <div class="qt-header-top">
+                                    <ul class="qt-tags">
+                                        <li><a href="#">{{$actualite->titre}}</a></li>
+                                    </ul>
 
-                                    <h3 class="qt-title">
-                                        <a href="#read" class="qt-text-shadow">	</a>
-                                    </h3>
                                 </div>
-                            </div>
-                            <div class="qt-header-bottom">
-                                <div class="qt-item-metas">
-                                    <a class="qt-author-thumb" href="#author-url">
-                                        <img src="{{asset('utilisateur/imagestemplate/actualites/actu.png')}}" alt="" width="30" height="30">
-                                    </a>
-                                    <div class="qt-texts">
-                                        <p class="qt-author"><a href="#author-url">EEN</a></p>
-                                        <p class="qt-date"></p>
+                                <div class="qt-header-mid qt-vc">
+                                    <div class="qt-vi">
+
+                                        <h3 class="qt-title">
+                                            <a href="#read" class="qt-text-shadow">	</a>
+                                        </h3>
                                     </div>
                                 </div>
-                                <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
-                            </div>
-                            <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/network.png')}}">
-                                <img src="{{asset('utilisateur/imagestemplate/network.png')}}" alt="Featured image" width="690" height="302">
-                            </div>
-                        </div>
-                        <div class="qt-item-content qt-card qt-the-content">
-                            <p>Vous souhaitez vous lancer à l’international ? Enterprise Europe Network Tunisie « Votre Partenaire » pour se développer et réussir sur le marché européen.<br>
-
-                                Le réseau Enterprise Europe Network est le plus grand réseau d’entreprises au monde présent dans plus de 60 pays.<br>
-
-                                On vous offre gratuitement des services pour :<br>
-
-                                ·         Trouver de <a href="http://een.ec.europa.eu/tools/services/SearchCenter/Search/ProfileSimpleSearch" target=_blank > nouveaux marchés</a> pour vos produits<br>
-
-                                ·         Trouver les bons partenaires à travers l'insertion de votre profil de coopération<br>
-
-                                ·          Participer à une grande variété <a href="http://een.ec.europa.eu/tools/services/SearchCenter/Search/EventSimpleSearch" target=_blank >d'événements de réseautage </a>(B2B,…)<br>
-
-                                ·        <a href=" http://een.ec.europa.eu/tools/services/ExpressionOfInterest/Customer/Create?shid=32db25cb-726f-43b0-8b5f-7742d0935799"target=_blank> Etre membre </a>au plus grand réseau d’entreprises au monde<br>
-
-                                Pour plus d’information visiter le site <a href=" https://een-tunisie.tn/" target=_blank  >https://een-tunisie.tn/</a><br>
-                        </div>
-                    </div>
-
-                    <div class="qt-part-archive-item">
-                        <div class="qt-item-header">
-                            <div class="qt-header-top">
-                                <ul class="qt-tags">
-                                    <li><a href="#">Actualités</a></li>
-                                </ul>
-
-                            </div>
-                            <div class="qt-header-mid qt-vc">
-                                <div class="qt-vi">
-                                    <h3 class="qt-title">
-                                        <a href="#" class="qt-text-shadow">
-                                            MOBILE WORLD CONGRESS Barcelone 26 Février-1 er Mars 2018
+                                <div class="qt-header-bottom">
+                                    <div class="qt-item-metas">
+                                        <a class="qt-author-thumb" href="#author-url">
+                                            <img src="{{asset('utilisateur/imagestemplate/actualites/actu.png')}}" alt="" width="30" height="30">
                                         </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="qt-header-bottom">
-                                <div class="qt-item-metas">
-                                    <a class="qt-author-thumb" href="#">
-                                        <img src="{{asset('utilisateur/imagestemplate/author-thumbnail.jpg')}}" alt="" width="30" height="30">
-                                    </a>
-                                    <div class="qt-texts">
-                                        <p class="qt-author"><a href="#">******</a></p>
-                                        <p class="qt-date"></p>
+                                        <div class="qt-texts">
+                                            <p class="qt-author"><a href="#author-url">EEN</a></p>
+                                            <p class="qt-date"></p>
+                                        </div>
                                     </div>
+                                    <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
                                 </div>
-                                <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
+                                <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/network.png')}}">
+                                    <img src="{{asset('utilisateur/imagestemplate/network.png')}}" alt="Featured image" width="690" height="302">
+                                </div>
                             </div>
-                            <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/mobile.png')}}">
-                                <img src="{{asset('utilisateur/imagestemplate/mobile.png')}}" alt="Featured image" width="690" height="302">
-                            </div>
-                        </div>
-                        <div class="qt-item-content qt-card qt-the-content">
-                            En tant que membre du réseau Européen Entreprise Europe Network EEN, Elgazala Technopark,  a été choisi comme un co-organisateurlocal des rencontres d’affaires qui se dérouleront du 26 février au 1er mars 2018,en marge du MWC 2018,à Barcelone.
-                            La participation d’Elgazala Technopark a pour objectif, d’offrir aux entreprises du Technopark la possibilité de nouer des partenariats avec leurs homologues internationaux participants aux rencontres b2match, et de découvrir les nouvelles tendances technologiques dans le monde. A cet effet,Elgazala Techopark a coordonnée avec  le Cepex afin de de faire participer neuf startups et deux  PMEs hébergées à Elgazala Technopark  à ce forum international.
-                        </div>
-                    </div>
+                            <div class="qt-item-content qt-card qt-the-content">
+                                <p>{{$actualite->description}}</p>
 
-                    <hr class="qt-spacer-m">
+                            </div>
+                        </div>
+
+                        <hr class="qt-spacer-m">
+
+                    @endforeach
                 </div>
                 <div class="qt-sidebar col s12 m12 l3">
 

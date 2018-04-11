@@ -16,12 +16,10 @@ class CreateAdministrateursTable extends Migration
         Schema::create('administrateurs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nom');
-            $table->string('prenom');
-            $table->string('image');
-            $table->string('tel');
             $table->string('email');
-            $table->string('mdp');
-            $table->rememberToken();
+            $table->string('password');
+            $table->string('tel');
+            $table->boolean('statut');
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ class CreateAdministrateursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('administrateurs');
     }
 }

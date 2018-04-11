@@ -54,40 +54,23 @@
                     </div>
                     <hr class="qt-spacer-m">
                 </div>
-                <div class="col s12 m12 l8">
-                    <div class="qt-the-content">
 
-                        <h1>Présentation</h1>
-                        <br>
-                        <dd><p>Jump’in est un incubateur spécialisé dans l’accompagnement des porteurs de projets innovants dans le secteur des médias digitaux .Il cible prioritairement les étudiants et porteurs de projets innovants dans les secteurs des médias digitaux et du développement de jeux numériques. Jump’in repose sur le concept d’un co-working space qui favorise le partage et l’entraide entre les incubés. Durant toute une année, les incubés bénéficient d’un ensemble de moyens techniques facilitant la création de nouveaux médias au contenu innovant. Ils bénéficient également d’une panoplie de services d’aide à la commercialisation et à l’internationalisation.</p></dd>
-                        <br>
-                        <h1>Faqs</h1>
-                        <br>
-                        <dd><p>Qui peut postuler ?
+                    @foreach( $jumps as $jump )
+                    <div class="col s12 m12 l8">
+                        <div class="qt-the-content">
 
-                                Tout porteur de projet innovant dans le secteur des médias digitaux et du gaming
-
-                                Qu’appelez-vous media digitaux ?
-
-                                Les médias digitaux peuvent être créés, visualisés, distribués, modifiés et conservés sur des appareils électroniques numériques.
-
-                                Qu’elle est la durée de l’incubation ?
-
-                                La durée d’incubation ne peut guère excéder 12 mois
-
-                                L’incubation est-elle conditionnée par la rentabilité ?
-
-                                Chaque porteur d’idée doit accompagner l’exposée de son idée par un business plan contenant une étude financière faite dans les réglés de l’art, seuls les projets rentables seront retenus, par la commission de sélection.</p></dd>
+                            <h1>{{$jump->titre}}</h1>
+                            <br>
+                            <dd><p>{{$jump->description}}</p></dd>
+                            <br>
 
 
+                        </div>
 
-
-
-                        </form>
+                        <hr class="qt-spacer-l">
                     </div>
+                    @endforeach
 
-                    <hr class="qt-spacer-l">
-                </div>
                 <div class="qt-sidebar col s12 m12 l3">
 
                     <div class="qt-widgets qt-sidebar-main qt-text-secondary row">

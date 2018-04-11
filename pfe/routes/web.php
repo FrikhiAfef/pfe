@@ -15,19 +15,19 @@
 // front controller
 Route::group(['namespace'=>'utilisateur'],function() {
     Route::get('/','HomeController@index' );
-    Route::get('emission', 'EmissionController@index')->name('emission');
-    Route::get('evenement', 'EvenementController@index')->name('evenement');
-    Route::get('programmes', 'ProgrammeController@index')->name('programme');
+    Route::get('emission/{emission?}', 'EmissionController@emission')->name('emission');
+    Route::get('evenement/{evenement?}', 'EvenementController@evenement')->name('evenement');
+    Route::get('programmes/{programme?}', 'ProgrammeController@programme')->name('programme');
     Route::get('contact', 'ContactController@index')->name('contact');
-    Route::get('equipe', 'EquipeController@index')->name('equipe');
+    Route::get('equipe/{equipe?}', 'EquipeController@equipe')->name('equipe');
     Route::get('digitalMediaLab', 'MedialabController@index')->name('DigitalMediaLab');
-    Route::get('apropos', 'ApropoController@index')->name('apropos');
-    Route::get('podcast', 'PodcastController@index')->name('podcast');
-    Route::get('actualite', 'ActualiteController@index')->name('actualite');
+    Route::get('apropos/{apropo?}', 'ApropoController@apropo')->name('apropos');
+    Route::get('podcast/{podcast?}', 'PodcastController@podcast')->name('podcast');
+    Route::get('actualite/{actualite?}', 'ActualiteController@actualite')->name('actualite');
     Route::get('connexion', 'ConnexionController@index')->name('connexion');
     Route::get('inscription', 'InscriptionController@index')->name('inscription');
-    Route::get('galerie', 'GalerieController@index')->name('galerie');
-    Route::get('JumpInIncubator', 'JumpinController@index')->name('jumpin');
+    Route::get('galerie/{galerie?}', 'GalerieController@galerie')->name('galerie');
+    Route::get('JumpInIncubator/{jump?}', 'JumpinController@jump')->name('jumpin');
 } );
 
 

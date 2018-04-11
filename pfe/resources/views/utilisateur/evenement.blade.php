@@ -65,168 +65,47 @@
                 <div class="col s12 m12 l8">
                     <ul class="collapsible qt-chart-tracklist" data-collapsible="accordion">
                         <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image1.jpg')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
+                      @foreach($evenements as $evenement)
+                            <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
+                                <div class="qt-chart-table collapsible-header qt-content-primary">
+                                    <div class="qt-position">
+                                        <img src="{{asset('utilisateur/imagestemplate/event/Image1.jpg')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
+                                    </div>
+                                    <div class="qt-titles">
+                                        <h3 class="qt-ellipsis qt-t">{{$evenement->nomEven}}</h3>
+                                        <p>{{$evenement->date}}</p>
+                                    </div>
+                                    <div class="qt-action">
+                                        <h2>+</h2>
+                                    </div>
                                 </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">	SITIC AFRICA 2018</h3>
-                                    <p>10-12 Avril 2018</p>
+                                <div class="collapsible-body qt-paper">
+                                    <img src="{{asset('utilisateur/imagestemplate/event/1.png')}}" >
                                 </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/1.png')}}" >
-                            </div>
-                        </li>
+                            </li>
+                          @endforeach
                         <!-- CHART TRACK END ========================= -->
                         <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image2.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Felicia Tunes</h3>
-                                    <p>Octobre2018</p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/2.png')}}" >
-                            </div>
-                        </li>
-                        <!-- CHART TRACK END ========================= -->
-                        <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image3.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Mobile World Congress
-                                        2018												</h3>
-                                    <p>26 Février – 1 Mars 2018
-                                    </p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/3.png')}}" >
-                            </div>
-                        </li>
-                        <!-- CHART TRACK END ========================= -->
-                        <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image4.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Hannover-Germany
-                                    </h3>
-                                    <p>11-15 Juin 2018
-                                    </p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/4.png')}}" >
-                            </div>
-                        </li>
-                        <!-- CHART TRACK END ========================= -->
-                        <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image6.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Elgazala Speed</h3>
-                                    <p>Décembre 2018
-                                    </p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/9.png')}}" >
-                            </div>
-                        </li>
-                        <!-- CHART TRACK END ========================= -->
-                        <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image5.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">salon de l'entrepreneuriat</h3>
-                                    <p>21-22 Février 2018</p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
 
-                            </div>
-                        </li>
+                        <!-- CHART TRACK END ========================= -->
+                        <!-- CHART TRACK ========================= -->
+
+                        <!-- CHART TRACK END ========================= -->
+                        <!-- CHART TRACK ========================= -->
+
+                        <!-- CHART TRACK END ========================= -->
+                        <!-- CHART TRACK ========================= -->
+
+                        <!-- CHART TRACK END ========================= -->
+                        <!-- CHART TRACK ========================= -->
+
                         <!-- CHART TRACK END ========================= -->
 
                         <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image7.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Elgazala Demo Days </h3>
-                                    <p>Novembre 2018
-                                    </p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
 
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/Image8.png')}}" >
-                            </div>
-                        </li>
                         <!-- CHART TRACK END ========================= -->
                         <!-- CHART TRACK ========================= -->
-                        <li class="qt-part-chart qt-chart-track qt-negative qt-card-s">
-                            <div class="qt-chart-table collapsible-header qt-content-primary">
-                                <div class="qt-position">
-                                    <img src="{{asset('utilisateur/imagestemplate/event/Image9.png')}}" class="qt-chart-cover" alt="Chart track" width="170" height="170">
-                                    <span>03</span>
-                                </div>
-                                <div class="qt-titles">
-                                    <h3 class="qt-ellipsis qt-t">Midday in the cisy</h3>
-                                    <p>Blueberries</p>
-                                </div>
-                                <div class="qt-action">
-                                    <h2>+</h2>
-                                </div>
-                            </div>
-                            <div class="collapsible-body qt-paper">
-                                <img src="{{asset('utilisateur/imagestemplate/event/5.png')}}" >
-                                <img src="{{asset('utilisateur/imagestemplate/event/6.png')}}" >
 
-
-                            </div>
-                        </li>
 
                     </ul>
                 </div>

@@ -7,4 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class emission extends Model
 {
     protected $table = 'emissions';
+
+
+    public function getRouteKeyName()
+    {
+        return 'nomE';
+    }
 }
+
