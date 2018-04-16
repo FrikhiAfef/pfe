@@ -4,7 +4,22 @@
         <ul>
             <li><a href="<?php echo e(route('apropos')); ?>"><i class="dripicons-chevron-right"></i>à propos</a></li>
             <li><a href="<?php echo e(route('equipe')); ?>"><i class="dripicons-chevron-right"></i>Équipe</a></li>
-            <li><a href="<?php echo e(route('connexion')); ?>"><i class="dripicons-chevron-right"></i>Connexion</a></li>
+            <li>
+            <?php if( Auth::guest()): ?>
+            <a href="<?php echo e(route('login')); ?>"><i class="dripicons-chevron-right"></i>Connexion</a>
+            <?php else: ?>
+                <a href="<?php echo e(route('logout')); ?>"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+
+                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                    <?php echo e(csrf_field()); ?>
+
+                </form>
+            <?php endif; ?>
+            </li>
             <li><a href="<?php echo e(route('inscription')); ?>"><i class="dripicons-chevron-right"></i>Inscription</a></li>
         </ul>
     </div>

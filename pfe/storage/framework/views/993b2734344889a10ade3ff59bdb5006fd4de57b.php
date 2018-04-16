@@ -38,8 +38,17 @@
                             <div class="pull-left">
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
                             </div>
-                            <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Déconnexion</a>
+                            <div class="btn btn-default pull-right">
+                                <a href="<?php echo e(route('logout')); ?>"
+                                   onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                                    Deconnexion
+                                </a>
+
+                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                                    <?php echo e(csrf_field()); ?>
+
+                                </form>
                             </div>
                         </li>
                     </ul>

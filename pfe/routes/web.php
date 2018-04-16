@@ -24,7 +24,7 @@ Route::group(['namespace'=>'utilisateur'],function() {
     Route::get('apropos/{apropo?}', 'ApropoController@apropo')->name('apropos');
     Route::get('podcast/{podcast?}', 'PodcastController@podcast')->name('podcast');
     Route::get('actualite/{actualite?}', 'ActualiteController@actualite')->name('actualite');
-    Route::get('connexion', 'ConnexionController@index')->name('connexion');
+    Route::get('connexion', 'ConnexionController@index');
     Route::get('inscription', 'InscriptionController@index')->name('inscription');
     Route::get('galerie/{galerie?}', 'GalerieController@galerie')->name('galerie');
     Route::get('JumpInIncubator/{jump?}', 'JumpinController@jump')->name('jumpin');
@@ -87,6 +87,10 @@ Route::group(['namespace'=>'admin'],function() {
     Route::resource('admin/porteur','PorteurController');
     //route de role
     Route::resource('admin/role','RoleController');
+    //route d'authentification
+    Route::get('admin-login', 'Auth\LoginController@showLoginForm')->name('superadmin.login');
+    Route::post('admin-login', 'Auth\LoginController@login');
+
 } );
 //route de l'interface de utilisateur
 Route::resource('admin/administrateur','AdministrateurController');
@@ -115,3 +119,7 @@ Route::resource('responsable','ResponsableController');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
