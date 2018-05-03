@@ -5,6 +5,7 @@ namespace App\Http\Controllers\responsable\radio;
 use App\Model\responsable\radio\galerie;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\UploadedFile;
 
 class GaleriesController extends Controller
 {
@@ -37,30 +38,27 @@ class GaleriesController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request,[
             'titre'=>'required',
-            'image'=>'required',
+            'image' => 'required',
             'video'=>'required',
-
 
         ]);
 
-        //creation de noveau model d'emission
-        $galerie = new galerie;
+        $galerie = new galerie();
 
-        //affectation de les valeurs
-        $galerie->titre = $request->input('titre');
-        $galerie -> image = $request->input('image');
-        /* if($request->hasFile('image'))
-         {
+        if ($request->hasFile('image')) {
 
-             $galerie>image=$request->image->store('image');
-         }*/
-        $galerie->video = $request->input('video');
+            $galerie->image=$request->image->store('image');
 
+        }
 
-        //enregistrement de le nouveau model dans la base
+        $galerie->titre=$request->titre;
+
+        $galerie->video=$request->video;
         $galerie->save();
+
 
         session()->flash('success','L"a propos à été bien ajouté ');
         return redirect(route('galerie.index'));

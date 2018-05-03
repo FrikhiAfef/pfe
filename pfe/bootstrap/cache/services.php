@@ -23,7 +23,7 @@
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    22 => 'Cornford\\Googlmapper\\MapperServiceProvider',
     23 => 'App\\Providers\\AppServiceProvider',
     24 => 'App\\Providers\\AuthServiceProvider',
     25 => 'App\\Providers\\EventServiceProvider',
@@ -41,10 +41,11 @@
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'App\\Providers\\AppServiceProvider',
-    11 => 'App\\Providers\\AuthServiceProvider',
-    12 => 'App\\Providers\\EventServiceProvider',
-    13 => 'App\\Providers\\RouteServiceProvider',
+    10 => 'Cornford\\Googlmapper\\MapperServiceProvider',
+    11 => 'App\\Providers\\AppServiceProvider',
+    12 => 'App\\Providers\\AuthServiceProvider',
+    13 => 'App\\Providers\\EventServiceProvider',
+    14 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
@@ -137,7 +138,6 @@
     'translation.loader' => 'Illuminate\\Translation\\TranslationServiceProvider',
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
-    'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
   ),
   'when' => 
   array (
@@ -175,9 +175,6 @@
     array (
     ),
     'Illuminate\\Validation\\ValidationServiceProvider' => 
-    array (
-    ),
-    'Laravel\\Tinker\\TinkerServiceProvider' => 
     array (
     ),
   ),

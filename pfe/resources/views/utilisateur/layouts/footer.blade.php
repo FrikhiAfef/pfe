@@ -81,19 +81,19 @@
                 <div class="col s12 m12 l8">
                     Copyright 2018 Clever Technologies
                     <ul class="qt-menu-footer qt-small qt-list-chevron ">
-                        <li><a href="#"><i class="dripicons-chevron-right"></i>à propos</a></li>
-                        <li><a href="archive-members.html"><i class="dripicons-chevron-right"></i>Équipe</a></li>
-                        <li><a href="login.html"><i class="dripicons-chevron-right"></i>Connexion</a></li>
-                        <li><a href="login2.blade.php"><i class="dripicons-chevron-right"></i>Inscription</a></li>
+                        <li><a href="{{route('apropos')}}"><i class="dripicons-chevron-right"></i>à propos</a></li>
+                        <li><a href="{{route('equipe')}}"><i class="dripicons-chevron-right"></i>Équipe</a></li>
+                        <li><a href="{{route('login')}}"><i class="dripicons-chevron-right"></i>Connexion</a></li>
+                        <li><a href="{{route('inscription')}}"><i class="dripicons-chevron-right"></i>Inscription</a></li>
 
                     </ul>
                 </div>
                 <div class="col s12 m12 l4">
                     <ul class="qt-menu-social">
                         <li class="right"><a href="#"><i class="qticon-beatport"></i></a></li>
-                        <li class="right"><a href="#"><i class="qticon-facebook"></i></a></li>
-                        <li class="right"><a href="#"><i class="qticon-twitter"></i></a></li>
-                        <li class="right"><a href="#"><i class="qticon-youtube"></i></a></li>
+                        <li class="right"><a href="www.facebook.com"><i class="qticon-facebook"></i></a></li>
+                        <li class="right"><a href="www.twitter.com"><i class="qticon-twitter"></i></a></li>
+                        <li class="right"><a href="www.youtube.com"><i class="qticon-youtube"></i></a></li>
                         <li class="right"><a href="#"><i class="qticon-soundcloud"></i></a></li>
                     </ul>
                 </div>

@@ -40,16 +40,18 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
-
-            'admin' => [
-                'driver' => 'session',
-                'provider' => 'administrateurs',
-            ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'administrateurs',
+        ],
 
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
+        ],
+        'administrateur-api' => [
+            'driver' => 'token',
+            'provider' => 'administrateurs',
         ],
     ],
 

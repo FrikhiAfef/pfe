@@ -74,6 +74,7 @@ class Handler extends ExceptionHandler
             default:
 
                 return redirect()->guest(route('login'));
+           break;
         }
 
     }

@@ -38,7 +38,7 @@
                             <div class="pull-left">
                                 <a href="#" class="btn btn-default btn-flat">Profile</a>
                             </div>
-                            <div class="btn btn-default pull-right">
+                            <div class="btn btn-default pull-right"> 
                                 <a href="<?php echo e(route('logout')); ?>"
                                    onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
