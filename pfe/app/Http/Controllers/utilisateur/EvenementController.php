@@ -10,7 +10,7 @@ class EvenementController extends Controller
 {
     public function evenement(evenement $evenement){
         $evenements= $evenement::all();
-        return view('utilisateur.evenement',compact('evenements'));
-        return view('utilisateur.evenement',compact('evenement'));
+        return view('utilisateur.layoutstest.evenementtest',compact('evenements'));
+        return view('utilisateur.layoutstest.evenementtest',compact('evenement'));
     }
 }

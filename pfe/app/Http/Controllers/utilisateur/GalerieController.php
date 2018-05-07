@@ -10,7 +10,7 @@ class GalerieController extends Controller
 {
     public function galerie( galerie $galerie){
         $galeries= $galerie::all();
-        return view('utilisateur.galerie',compact('galeries'));
-        return view('utilisateur.galerie',compact('galerie'));
+        return view('utilisateur.layoutstest.galerietest',compact('galeries'));
+        return view('utilisateur.layoutstest.galerietest',compact('galerie'));
     }
 }

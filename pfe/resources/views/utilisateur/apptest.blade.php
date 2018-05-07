@@ -8,7 +8,7 @@
 @include('utilisateur.layoutstest.headertest')
 @section('contenu')
 @show
-
+@include('utilisateur.layoutstest.footertest')
 
 </body>
 </html>

@@ -10,7 +10,7 @@ class EmissionController extends Controller
 {
     public function emission( emission $emission){
         $emissions= $emission::all();
-        return view('utilisateur.emission',compact('emissions'));
-        return view('utilisateur.emission',compact('emission'));
+        return view('utilisateur.layoutstest.emissiontest',compact('emissions'));
+        return view('utilisateur.layoutstest.emissiontest',compact('emission'));
     }
 }

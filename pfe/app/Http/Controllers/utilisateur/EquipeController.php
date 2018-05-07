@@ -10,7 +10,7 @@ class EquipeController extends Controller
 {
     public function equipe(equipe $equipe){
         $equipes= $equipe::all();
-        return view('utilisateur.equipes',compact('equipes'));
-        return view('utilisateur.equipes',compact('equipe'));
+        return view('utilisateur.layoutstest.equipestest',compact('equipes'));
+        return view('utilisateur.layoutstest.equipestest',compact('equipe'));
     }
 }

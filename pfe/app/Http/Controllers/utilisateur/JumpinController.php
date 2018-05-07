@@ -10,8 +10,8 @@ class JumpinController extends Controller
 {
     public function jump(jump $jump){
         $jumps= $jump::all();
-        return view('utilisateur.jumpin',compact('jumps'));
-        return view('utilisateur.jumpin',compact('jump'));
+        return view('utilisateur.layoutstest.jumpintest',compact('jumps'));
+        return view('utilisateur.layoutstest.jumpintest',compact('jump'));
 
     }
 }

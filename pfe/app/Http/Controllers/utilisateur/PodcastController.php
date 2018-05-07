@@ -11,7 +11,7 @@ class PodcastController extends Controller
 {
     public function podcast (podcast $podcast){
         $podcasts= $podcast::all();
-        return view('utilisateur.podcast',compact('podcasts'));
-        return view('utilisateur.podcast',compact('podcast'));
+        return view('utilisateur.layoutstest.podcasttest',compact('podcasts'));
+        return view('utilisateur.layoutstest.podcasttest',compact('podcast'));
     }
 }

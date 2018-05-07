@@ -10,7 +10,7 @@ class ActualiteController extends Controller
 {
     public function actualite(actualite $actualite ){
         $actualites= $actualite::all();
-        return view('utilisateur.actualite',compact('actualites'));
-        return view('utilisateur.actualite',compact('actualite'));
+        return view('utilisateur.layoutstest.actualitetest',compact('actualites'));
+        return view('utilisateur.layoutstest.actualitetest',compact('actualite'));
     }
 }

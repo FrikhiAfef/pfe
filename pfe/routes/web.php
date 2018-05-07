@@ -14,7 +14,7 @@
 
 // front controller
 Route::group(['namespace'=>'utilisateur'],function() {
-    Route::get('/','HomeController@index' );
+    Route::get('/','HomeController@index' )->name('acceuil');
     Route::get('emission/{emission?}', 'EmissionController@emission')->name('emission');
     Route::get('evenement/{evenement?}', 'EvenementController@evenement')->name('evenement');
     Route::get('programmes/{programme?}', 'ProgrammeController@programme')->name('programme');
