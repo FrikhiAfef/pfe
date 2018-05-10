@@ -17,6 +17,7 @@ class CreateActualitesTable extends Migration
             $table->increments('id');
             $table->string('titre');
             $table->string('image');
+            $table->date('date');
             $table->string('description');
             $table->timestamps();
         });

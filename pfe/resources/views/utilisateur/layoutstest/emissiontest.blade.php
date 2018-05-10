@@ -39,7 +39,7 @@
                                             <p class="qt-date"> {{$emission->date}}</p>
                                         </div>
                                     </div>
-                                    <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
+
                                 </div>
                                 <div class="qt-header-bg" data-bgimage='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}}'>
                                     <img src='{{asset('utilisateur/imagestemplate\emissions\img11.jpeg')}} alt="Featured image'width="690" height="302">

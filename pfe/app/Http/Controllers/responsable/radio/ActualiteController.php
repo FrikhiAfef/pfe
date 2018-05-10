@@ -41,6 +41,7 @@ class ActualiteController extends Controller
         $this->validate($request,[
             'titre'=>'required',
             'image'=>'required',
+            'date'=>'required',
             'description'=>'required',
 
 
@@ -52,6 +53,7 @@ class ActualiteController extends Controller
         //affectation de les valeurs
         $act->titre = $request->input('titre');
         $act -> image = $request->input('image');
+        $act->date = $request->input('date');
        /* if($request->hasFile('image'))
         {
 
@@ -103,6 +105,7 @@ class ActualiteController extends Controller
     {
         $act =actualite::find($id);
         $act->titre = $request->input('titre');
+        $act->date = $request->input('date');
         //$act -> image = $request->input('image');
         $act->description = $request->input('description');
         $act->save();

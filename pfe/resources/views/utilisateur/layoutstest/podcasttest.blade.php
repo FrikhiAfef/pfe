@@ -17,9 +17,7 @@
                             <a href="single-podcast.html" class="qt-text-shadow"><i class="dripicons-media-play qt-text-neg"></i></a>
                         </div>
                     </div>
-                    <div class="qt-header-bottom">
-                        <a href="single-podcast.html" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-music"></i></a>
-                    </div>
+
                     <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/img04.jpg')}}">
                         <img src="{{asset('utilisateur/imagestemplate/imagestemplate/img04.jpg')}}" alt="Featured image" width="690" height="690">
                     </div>

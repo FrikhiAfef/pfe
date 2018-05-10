@@ -49,6 +49,15 @@
                                     @endif
 
                                 </div>
+                                <div class="form-group"  @if($errors->get('date')) has-error @endif >
+                                    <label for="date">Date</label>
+                                    <input type="text" name="date" class="form-control"  placeholder="Enter la date de l'emission">
+                                    @if($errors->get('date'))
+                                        @foreach($errors->get('date') as $message)
+                                            <li>{{$message}}</li>
+                                        @endforeach
+                                    @endif
+                                </div>
 
                                 <div class="form-group" @if($errors->get('description')) has-error @endif>
                                     <label>Description</label>

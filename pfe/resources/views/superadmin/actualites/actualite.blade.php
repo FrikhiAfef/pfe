@@ -47,6 +47,7 @@
                             <th>id</th>
                             <th>Titre</th>
                             <th>Image</th>
+                            <th>Date</th>
                             <th>Description</th>
                             <th>Action</th>
                         </tr>
@@ -57,6 +58,7 @@
                                 <td> {{ $actualite-> id }} </td>
                                 <td>{{ $actualite-> titre }}</td>
                                 <td>{{ $actualite -> image  }}</td>
+                                <td>{{ $actualite -> date  }}</td>
                                 <td> {{ $actualite -> description }}</td>
                                 <td>
                                     <form action="{{ route('actualite.destroy',$actualite->id) }}" method="post">

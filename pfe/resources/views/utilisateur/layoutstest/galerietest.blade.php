@@ -25,9 +25,7 @@
                                         </h3>
                                     </div>
                                 </div>
-                                <div class="qt-header-bottom">
-                                    <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
-                                </div>
+
                                 <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/gallerie/01.jpg')}}">
                                     <img src="{{asset('utilisateur/imagestemplate/gallerie/01.jpg')}}" alt="Featured image" width="690" height="690">
                                 </div>

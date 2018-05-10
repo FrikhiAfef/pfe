@@ -25,9 +25,7 @@
                                         </h4>
                                     </div>
                                 </div>
-                                <div class="qt-header-bottom">
-                                    <a href="single-member.php" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-user"></i></a>
-                                </div>
+
                                 <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/medium-690-302/unsplash-02.jpg')}}">
                                     <img src="{{asset('utilisateur/imagestemplate/medium-690-302/unsplash-02.jpg')}}" alt="Featured image" width="690" height="690">
                                 </div>

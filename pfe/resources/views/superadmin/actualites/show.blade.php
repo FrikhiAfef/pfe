@@ -24,6 +24,7 @@
                     <div class="panel-body">
                         <p>Titre : {{ $actualites->titre }}</p>
                         <p>Image : {{ $actualites->image }}</p>
+                        <p>Date : {{ $actualites->date }}</p>
                         <p>Description : {{ $actualites->description }}</p>
                     </div>
                 </div>

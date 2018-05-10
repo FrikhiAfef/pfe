@@ -27,9 +27,7 @@
                                     </h3>
                                 </div>
                             </div>
-                            <div class="qt-header-bottom">
-                                <a href="#" class="qt-btn qt-btn-primary qt-readmore"><i class="dripicons-align-justify"></i></a>
-                            </div>
+
                             <div class="qt-header-bg" data-bgimage="{{asset('utilisateur/imagestemplate/event/1.png')}}">
                                 <img src="{{asset('utilisateur/imagestemplate/squared-690-690/unsplash-02.jpg')}}" alt="Featured image" width="690" height="690">
                             </div>
